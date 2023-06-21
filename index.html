@@ -23,31 +23,6 @@
 
   
   <style>
-    .poster {
-      box-shadow: 0 0 15px red !important;
-    
-    }
-    #scrollToTopButton {
-      position: fixed;
-      bottom: 40px;
-      right: 25px;
-      font-size: 25px;
-      z-index: 99;
-      width: 50px;
-      height: 50px;
-      background-color: red;
-      color: #000000;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      padding: 6px;
-      border-radius: 50%;
-    }
-  
-  #scrollToTopButton:hover,i:hover {
-      background-color: white;
-      color: red;
-    }
   
     #btn-back-to-top {
   position: fixed;
@@ -58,9 +33,13 @@
   
   </style>
   
-  <button id="backToTop" title="Go to top">
-    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-  </button>
+  <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
   <script>
    let mybutton = document.getElementById("btn-back-to-top");
 
