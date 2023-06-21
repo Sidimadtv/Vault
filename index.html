@@ -22,7 +22,59 @@
 <body class="bg-gray-500">
 
   
+  <style>
+    .poster {
+      box-shadow: 0 0 15px red !important;
+    
+    }
+    #scrollToTopButton {
+      position: fixed;
+      bottom: 40px;
+      right: 25px;
+      font-size: 25px;
+      z-index: 99;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 6px;
+      border-radius: 50%;
+    }
   
+  #scrollToTopButton:hover,i:hover {
+      background-color: white;
+      color: red;
+    }
+  
+    
+  
+  </style>
+  
+  <button id="scrollToTopButton" title="Go to top">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+  </button>
+  <script>
+    $(document).ready(function () {
+      var scrollTopButton = document.getElementById("scrollToTopButton");
+      window.onscroll = function () { scrollFunction() };
+  
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
+  
+      $("#scrollToTopButton").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 200)
+      });
+    });
+  </script>
+    <!----------------------scroll back to top button-->
   
   
   
@@ -35,7 +87,7 @@
 
 
 
-
+  
 
 
 
@@ -52,46 +104,14 @@
 
 <p>
  <hr style="margin-top:50px;width:100%;border: 2px dashed #e22f2f;background-color: #131722;height:2px;position:relative; color:#ffffff">  </hr>
-<center> <h1 style="position:relative;text-decoration: red underline;width:100%;text-align:center;font-family: 'Reem Kufi';font-style: normal;font-weight: 500;border-bottom: 2px dashed #32a1ce;font-size:15px;border-radius:10px;color:#ffffff;background-color:transparent;"> جميع الحقةق محفوظة s!d!m@D</h1>
+<center> <h1 style="position:relative;text-decoration: red underline;width:100%;text-align:center;font-family: 'Reem Kufi';font-style: normal;font-weight: 500;border-bottom: 2px dashed #32a1ce;font-size:15px;border-radius:10px;color:#e22f2f;background-color:transparent;"> جميع الحقةق محفوظة s!d!m@D</h1>
 
 
 
 </center> 
 </p>
   
-<style>
-  .poster {
-    box-shadow: 0 0 15px red !important;
-  
-  }
-  #scrollToTopButton {
-    position: fixed;
-    bottom: 40px;
-    right: 25px;
-    font-size: 25px;
-    z-index: 99;
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    color: #000000;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 6px;
-    border-radius: 50%;
-  }
 
-#scrollToTopButton:hover,i:hover {
-    background-color: white;
-    color: red;
-  }
-
-  
-
-</style>
-
-
-  <!----------------------scroll back to top button-->
    
 
 
@@ -142,27 +162,7 @@
       
       
       
-      <button id="scrollToTopButton" title="Go to top">
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-      </button>
-      <script>
-        $(document).ready(function () {
-          var scrollTopButton = document.getElementById("scrollToTopButton");
-          window.onscroll = function () { scrollFunction() };
-  
-          function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              scrollTopButton.style.display = "block";
-            } else {
-              scrollTopButton.style.display = "none";
-            }
-          }
-  
-          $("#scrollToTopButton").click(function () {
-            $('html ,body').animate({ scrollTop: 0 }, 200)
-          });
-        });
-      </script>
+   
   
 
 
