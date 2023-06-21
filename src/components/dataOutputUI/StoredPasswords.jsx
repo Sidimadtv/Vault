@@ -9,7 +9,7 @@ const StoredPasswords = () => {
   return (
     <section className="passwordList mx-auto">
       {allPasswords.length == 0 ? 
-        <div className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"><h5 className="emptyPlaceholder font-bold text-white">No passwords Have Been Found, All Saved Passwords Will be Shown Here</h5></div> : <PasswordTable data={allPasswords} />}
+        <div className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"><h5 className="emptyPlaceholder font-bold text-white">No Infos Have Been Found, All Saved Infos Will be Shown Here</h5></div> : <PasswordTable data={allPasswords} />}
     </section>
   )
 }
