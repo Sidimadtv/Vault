@@ -6,5 +6,5 @@ export default function saveToLocalStorage(allPasswords, masterPassword) {
   const data = encryptionForExport(allPasswords, masterPassword);
 
   // The encrypted passwords are saved to local storage
-  localStorage.setItem('passwords', data);
+  localStorage.setItem('My_Passwords_Backup-ByS!D!M@D-', data);
 }
