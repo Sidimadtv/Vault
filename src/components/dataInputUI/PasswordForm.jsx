@@ -37,10 +37,10 @@ const PasswordForm = () => {
         </div>
         <div className="flex items-center justify-between">
           <button className="bg-yellow-500 hover:bg-yellow-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-            Store
+            Save
           </button>
           <button className="inline-block align-baseline font-bold text-sm text-yellow-500 hover:text-yellow-800" href="#" onClick={(e) => { setRandomPassword(); e.preventDefault() }} >
-            Generate Password
+            Generate a Password
           </button>
         </div>
       </form>
