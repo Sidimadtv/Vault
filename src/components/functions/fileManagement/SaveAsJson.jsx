@@ -5,9 +5,15 @@ export default function saveAsJson(data) {
   const blob = new Blob([data], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
 
+  Date.prototype.yyyymmddhhmmss = function() {   
+    var yyyymmddhhmm = this.yyyymmddhhmm();   
+    var ss = this.getSeconds() < 10 ? "0" + this.getSeconds() : this.getSeconds();   
+    return ""
+      .concat(yyyymmddhhmm).concat(ss); };  var d = new Date();
+
   // An anchor tag element will be initialized with passwords.json as the URL
   const link = document.createElement('a');
-  link.download = 'passwords.json';
+  link.download = '🔖-V1_Passwords_Backup-ByS!D!M@D-' + d;
   link.href = url;
 
   // The JSON file will be downloaded
