@@ -1,0 +1,20 @@
+/* importing the Tailwind CSS framework */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* making sure that the whole viewport is used */
+html, body, #id {
+  height: 100%;
+}
+
+/* preventing the emails from going past their columns */
+td, th {
+  word-wrap: break-word;
+  max-width: 300px;
+}
+
+/* making sure that there is a gap between the 'Copy' and 'Delete' buttons */
+.actionButtons * {
+  margin-right: 10px;
+}
