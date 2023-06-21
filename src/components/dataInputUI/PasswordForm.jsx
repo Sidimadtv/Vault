@@ -24,7 +24,7 @@ const PasswordForm = () => {
       <form className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(handleSave)}>
         <div className="mb-4">
           <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
-            Email / Username
+            Email | Username
           </label>
           <input required={true} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="email" type="text" placeholder="Username" {...register('email')} />
         </div>
