@@ -6,15 +6,19 @@
 /* making sure that the whole viewport is used */
 html, body, #id {
   height: 100%;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 /* preventing the emails from going past their columns */
 td, th {
   word-wrap: break-word;
   max-width: 300px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 /* making sure that there is a gap between the 'Copy' and 'Delete' buttons */
 .actionButtons * {
   margin-right: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+  border: 1px solid #a00;
 }
