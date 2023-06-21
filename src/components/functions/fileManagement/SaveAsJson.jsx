@@ -13,7 +13,7 @@ export default function saveAsJson(data) {
 
   // An anchor tag element will be initialized with passwords.json as the URL
   const link = document.createElement('a');
-  link.download = 'My_Passwords_Backup-ByS!D!M@D-' + d;
+  link.download = 'V3_Passwords_Backup|-ByS!D!M@D-' + d;
   link.href = url;
 
   // The JSON file will be downloaded
